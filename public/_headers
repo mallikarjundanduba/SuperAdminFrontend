@@ -1,0 +1,8 @@
+# Fix MIME type for module scripts (application/octet-stream -> application/javascript)
+# Required for <script type="module"> to run. Use with Netlify, Cloudflare Pages, etc.
+
+/assets/*.js
+  Content-Type: application/javascript; charset=utf-8
+
+/assets/*.css
+  Content-Type: text/css; charset=utf-8
